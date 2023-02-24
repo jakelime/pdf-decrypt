@@ -1,28 +1,29 @@
 PDF Decrypt
 ===========
 
-Removes password-protection from a PDF-document permanently.
+This is a fork from https://github.com/zvynar/pdf-decrypt/
+
+Just a wrapper / instructions on how to implement on macOS
+
 
 Installation
 ------------
 
-On Arch Linux simply do:
 ```bash
-cd $(mktemp -d)
-wget https://github.com/zvynar/pdf-decrypt/raw/master/PKGBUILD
-makepkg
-sudo pacman -U *.pkg.tar.xz
+cd ~
+git clone git@github.com:jakelime/pdf-decrypt.git
+cd pdf-decrypt
+brew install qpdf
 ```
-or
-```bash
-yaourt -S pdf-decrypt
-```
+
+
+From original readme:
+================================================================
 
 Dependencies:
  - qpdf, a PDF-transformation-program (pdf-decrypt is actually just a small
    wrapper of it).
  - bash (what means: I use bash-features like extended `test` or `function`s)
-
 
 The bash-file works out of the box, no installation needed. If you want to have
 it integrated in your desktop-environment, you can use the desktop-file and
@@ -31,6 +32,9 @@ files as follows:
  - `pdf-decrypt.bash` -> `/usr/bin/pdf-decrypt`
  - `pdf-decrypt.desktop` -> `/usr/share/applications/pdf-decrypt.desktop`
  - `pdf-decrypt.png` -> `/usr/share/pixmaps/pdf-decrypt.png`
+
+(``/usr/bin/``) is protected by SIP in latest versions of macOS
+
 
 Usage
 -----
