@@ -1,3 +1,6 @@
+Project is modified with courtesy of Milan Oberkirch.
+
+
 Copyright (2013) Milan Oberkirch.
 
 Text-Files (except ending in .svg):
