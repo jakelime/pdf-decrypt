@@ -40,13 +40,13 @@ Add to system path and run anywhere
 ------------------------------------------------
 
 ```bash
-cp ~/pdf-decrypt/pdf-decrypt.bash /usr/local/bin/pdf-decrypt.sh
-cd ~/Anywhere/
+N2390113:~ jli8$: cp ~/pdf-decrypt/pdf-decrypt.bash /usr/local/bin/pdf-decrypt.sh
+N2390113:~ jli8$: cd ~/Downloads/
 pdf-decrypt.sh sample.pdf
 N2390113:Downloads jli8$ pdf-decrypt.sh sample.pdf
 Password:
 
-(base) N2390113:Downloads jli8$
+N2390113:Downloads jli8$
 ```
 
 
